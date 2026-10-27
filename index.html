@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Sân Vườn Cố Đô">
         <span class="brand-leaf" aria-hidden="true">✦</span>
@@ -27,15 +27,16 @@
   </header>
 
   <main id="top">
-    <!-- HERO: trên PC là 2 cột, trên điện thoại ảnh xếp trên, chữ xếp dưới -->
     <section class="hero">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div class="hero-text">
+        <div class="hero-text reveal">
           <p class="eyebrow">Thiết kế · Thi công · Chăm sóc</p>
           <h1>Sân vườn nhẹ,<br /><em>sống chậm.</em></h1>
           <p class="hero-lead">Một khoảng xanh vừa đủ, để nhà trở thành nơi muốn về — mỗi sáng, mỗi chiều.</p>
           <div class="hero-actions">
-            <a class="btn" href="#lien-he">Đặt lịch khảo sát</a>
+            <a class="btn btn-shine" href="#lien-he">Đặt lịch khảo sát</a>
             <a class="btn btn-ghost" href="#dich-vu">Xem dịch vụ ↓</a>
           </div>
           <div class="hero-badges">
@@ -43,9 +44,9 @@
             <span>✓ Bảo hành 12 tháng</span>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="https://ilverdecheresta.it/wp-content/uploads/2025/03/bg-parallax.jpg" alt="Khu vườn xanh mát với cây và lối đi" fetchpriority="high" />
-          <div class="hero-caption">
+        <div class="hero-media reveal reveal-delay">
+          <img src="https://src.garden.eco/img/image1_natural-garden-ideas_create-meandering-pathways.webp" alt="Lối đi uốn lượn giữa khu vườn xanh mát" fetchpriority="high" />
+          <div class="hero-caption float-soft">
             <strong>Vườn biệt thự</strong>
             <span>Xanh mát, thoáng, dễ chăm</span>
           </div>
@@ -55,7 +56,7 @@
 
     <section id="dich-vu" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <div>
             <p class="eyebrow">Dịch vụ</p>
             <h2>Ba không gian<br />được yêu thích nhất</h2>
@@ -63,7 +64,7 @@
           <p class="section-note">Chọn một hạng mục để bắt đầu, hoặc để chúng tôi tư vấn tổng thể cho cả khuôn viên.</p>
         </div>
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <div class="card-media"><img src="https://wallpapershome.com/images/pages/pic_h/29697.jpg" alt="Hồ cá Koi trong veo" loading="lazy" /></div>
             <div class="card-body">
               <h3>Hồ cá Koi</h3>
@@ -71,7 +72,7 @@
               <span class="card-tag">Thi công trọn gói</span>
             </div>
           </article>
-          <article class="card">
+          <article class="card reveal reveal-delay">
             <div class="card-media"><img src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Vườn Nhật tĩnh lặng với đá và đèn đá" loading="lazy" /></div>
             <div class="card-body">
               <h3>Vườn Nhật &amp; tiểu cảnh</h3>
@@ -79,8 +80,8 @@
               <span class="card-tag">Điểm nhấn sân vườn</span>
             </div>
           </article>
-          <article class="card">
-            <div class="card-media"><img src="https://ilverdecheresta.it/wp-content/uploads/2025/03/bg-parallax.jpg" alt="Sân vườn biệt thự xanh mát" loading="lazy" /></div>
+          <article class="card reveal reveal-delay-2">
+            <div class="card-media"><img src="https://www.garden.eco/img/image0_backyard-ideas-with-grass_defined-grass-areas.jpg" alt="Sân vườn biệt thự với thảm cỏ xanh" loading="lazy" /></div>
             <div class="card-body">
               <h3>Sân vườn biệt thự</h3>
               <p>Thiết kế tổng thể, hài hòa với kiến trúc nhà.</p>
@@ -91,9 +92,9 @@
       </div>
     </section>
 
-    <section id="khong-gian" class="showcase">
+    <section id="khong-gian" class="showcase reveal">
       <div class="container showcase-inner">
-        <img src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Góc vườn tĩnh lặng" loading="lazy" />
+        <img class="showcase-img" src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Góc vườn tĩnh lặng" loading="lazy" />
         <div class="showcase-text">
           <p class="eyebrow">Cảm giác khi bước vào</p>
           <h2>Yên, mát và rất riêng.</h2>
@@ -104,24 +105,24 @@
 
     <section id="quy-trinh" class="section">
       <div class="container">
-        <p class="eyebrow">Quy trình</p>
-        <h2>Ba bước là xong</h2>
+        <p class="eyebrow reveal">Quy trình</p>
+        <h2 class="reveal">Ba bước là xong</h2>
         <ol class="steps">
-          <li><span class="step-no">01</span><strong>Khảo sát</strong><p>Nghe nhu cầu, xem hiện trạng.</p></li>
-          <li><span class="step-no">02</span><strong>Thiết kế</strong><p>Bản vẽ rõ ràng, duyệt trước.</p></li>
-          <li><span class="step-no">03</span><strong>Thi công</strong><p>Bàn giao, chăm sóc sau đó.</p></li>
+          <li class="reveal"><span class="step-no">01</span><strong>Khảo sát</strong><p>Nghe nhu cầu, xem hiện trạng.</p></li>
+          <li class="reveal reveal-delay"><span class="step-no">02</span><strong>Thiết kế</strong><p>Bản vẽ rõ ràng, duyệt trước.</p></li>
+          <li class="reveal reveal-delay-2"><span class="step-no">03</span><strong>Thi công</strong><p>Bàn giao, chăm sóc sau đó.</p></li>
         </ol>
       </div>
     </section>
 
     <section id="lien-he" class="section contact-section">
-      <div class="container contact-card">
+      <div class="container contact-card reveal">
         <h2>Muốn có một khu vườn như vậy?</h2>
         <p>Để lại số điện thoại, chúng tôi gọi lại trong 24 giờ làm việc.</p>
         <form id="consult-form" novalidate>
           <input type="text" name="name" required placeholder="Họ và tên" aria-label="Họ và tên" autocomplete="name" />
           <input type="tel" name="phone" required placeholder="Số điện thoại" aria-label="Số điện thoại" autocomplete="tel" />
-          <button class="btn" type="submit">Gửi yêu cầu</button>
+          <button class="btn btn-shine" type="submit">Gửi yêu cầu</button>
         </form>
         <p class="form-status" role="status" aria-live="polite"></p>
         <p class="contact-note">Khảo sát miễn phí · Không ràng buộc</p>
