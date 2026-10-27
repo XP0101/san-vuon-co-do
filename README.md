@@ -1,8 +1,9 @@
 # Sân Vườn Cố Đô
 
-Landing page đơn giản, ít chữ, tông xanh lá nhạt và trắng, cho dịch vụ
-thiết kế, thi công và chăm sóc cảnh quan: sân vườn biệt thự, hồ cá Koi,
-vườn Nhật và tiểu cảnh, tường cây, vườn đứng, giếng trời, sân thượng.
+Landing page ít chữ, tông xanh lá nhạt và trắng, hiển thị đẹp trên cả
+PC và điện thoại, cho dịch vụ thiết kế, thi công và chăm sóc cảnh quan:
+sân vườn biệt thự, hồ cá Koi, vườn Nhật và tiểu cảnh, tường cây, vườn
+đứng, giếng trời, sân thượng.
 
 ## Chạy thử
 
