@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sân Vườn Cố Đô — Sân vườn nhẹ, sống chậm</title>
-  <meta name="description" content="Sân Vườn Cố Đô: sân vườn biệt thự, hồ cá Koi và tiểu cảnh, phong cách nhẹ nhàng, hiện đại." />
+  <title>Sân Vườn Cố Đô — Thiết kế, thi công &amp; chăm sóc cảnh quan</title>
+  <meta name="description" content="Sân Vườn Cố Đô: sân vườn biệt thự, hồ cá Koi, vườn Nhật, tiểu cảnh và chăm sóc định kỳ. Xem dự án theo hạng mục, ước tính chi phí và đặt lịch khảo sát miễn phí." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,10 +17,13 @@
         <span class="brand-leaf" aria-hidden="true">✦</span>
         Sân Vườn <strong>Cố Đô</strong>
       </a>
-      <nav class="nav" aria-label="Điều hướng chính">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Mở menu">☰</button>
+      <nav class="nav" id="main-nav" aria-label="Điều hướng chính">
         <a href="#dich-vu">Dịch vụ</a>
-        <a href="#khong-gian">Không gian</a>
-        <a href="#quy-trinh">Quy trình</a>
+        <a href="#du-an">Dự án</a>
+        <a href="#bao-gia">Ước tính chi phí</a>
+        <a href="#faq">Hỏi đáp</a>
+        <a href="#lien-he">Liên hệ</a>
       </nav>
       <a class="btn btn-small" href="#lien-he">Nhận tư vấn</a>
     </div>
@@ -37,11 +40,12 @@
           <p class="hero-lead">Một khoảng xanh vừa đủ, để nhà trở thành nơi muốn về — mỗi sáng, mỗi chiều.</p>
           <div class="hero-actions">
             <a class="btn btn-shine" href="#lien-he">Đặt lịch khảo sát</a>
-            <a class="btn btn-ghost" href="#dich-vu">Xem dịch vụ ↓</a>
+            <a class="btn btn-ghost" href="#du-an">Xem dự án ↓</a>
           </div>
-          <div class="hero-badges">
-            <span>✓ Khảo sát miễn phí</span>
-            <span>✓ Bảo hành 12 tháng</span>
+          <div class="hero-stats">
+            <div><strong>120+</strong><span>Công trình</span></div>
+            <div><strong>15 năm</strong><span>Kinh nghiệm</span></div>
+            <div><strong>12 tháng</strong><span>Bảo hành</span></div>
           </div>
         </div>
         <div class="hero-media reveal reveal-delay">
@@ -54,88 +58,255 @@
       </div>
     </section>
 
+    <!-- DỊCH VỤ: bấm vào thẻ để xem chi tiết trong hộp thoại -->
     <section id="dich-vu" class="section">
       <div class="container">
         <div class="section-head reveal">
           <div>
             <p class="eyebrow">Dịch vụ</p>
-            <h2>Ba không gian<br />được yêu thích nhất</h2>
+            <h2>Chọn đúng hạng mục<br />cho ngôi nhà của bạn</h2>
           </div>
-          <p class="section-note">Chọn một hạng mục để bắt đầu, hoặc để chúng tôi tư vấn tổng thể cho cả khuôn viên.</p>
+          <p class="section-note">Bấm vào từng thẻ để xem phạm vi công việc, thời gian và những gì đã bao gồm.</p>
         </div>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card-media"><img src="https://wallpapershome.com/images/pages/pic_h/29697.jpg" alt="Hồ cá Koi trong veo" loading="lazy" /></div>
-            <div class="card-body">
-              <h3>Hồ cá Koi</h3>
-              <p>Nước trong, lọc êm, cá khỏe quanh năm.</p>
-              <span class="card-tag">Thi công trọn gói</span>
-            </div>
-          </article>
-          <article class="card reveal reveal-delay">
-            <div class="card-media"><img src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Vườn Nhật tĩnh lặng với đá và đèn đá" loading="lazy" /></div>
-            <div class="card-body">
-              <h3>Vườn Nhật &amp; tiểu cảnh</h3>
-              <p>Đá, nước và ánh sáng — vừa đủ, không thừa.</p>
-              <span class="card-tag">Điểm nhấn sân vườn</span>
-            </div>
-          </article>
-          <article class="card reveal reveal-delay-2">
+        <div class="cards service-cards">
+          <article class="card service-card reveal" data-service="biet-thu">
             <div class="card-media"><img src="https://www.garden.eco/img/image0_backyard-ideas-with-grass_defined-grass-areas.jpg" alt="Sân vườn biệt thự với thảm cỏ xanh" loading="lazy" /></div>
-            <div class="card-body">
-              <h3>Sân vườn biệt thự</h3>
-              <p>Thiết kế tổng thể, hài hòa với kiến trúc nhà.</p>
-              <span class="card-tag">Từ thiết kế đến bàn giao</span>
-            </div>
+            <div class="card-body"><h3>Sân vườn biệt thự</h3><p>Thiết kế tổng thể, hài hòa với kiến trúc nhà.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
+          </article>
+          <article class="card service-card reveal reveal-delay" data-service="koi">
+            <div class="card-media"><img src="https://wallpapershome.com/images/pages/pic_h/29697.jpg" alt="Hồ cá Koi trong veo" loading="lazy" /></div>
+            <div class="card-body"><h3>Hồ cá Koi</h3><p>Nước trong, lọc êm, cá khỏe quanh năm.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
+          </article>
+          <article class="card service-card reveal reveal-delay-2" data-service="nhat">
+            <div class="card-media"><img src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Vườn Nhật tĩnh lặng với đá và đèn đá" loading="lazy" /></div>
+            <div class="card-body"><h3>Vườn Nhật &amp; tiểu cảnh</h3><p>Đá, nước và ánh sáng — vừa đủ, không thừa.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
+          </article>
+          <article class="card service-card reveal" data-service="tuong-cay">
+            <div class="card-media"><img src="https://images.stockcake.com/public/9/1/6/916d4474-528e-41c1-9672-b6b77591310e/enchanted-garden-pathway-stockcake.jpg" alt="Lối đi xanh trong vườn" loading="lazy" /></div>
+            <div class="card-body"><h3>Tường cây &amp; vườn đứng</h3><p>Giải pháp xanh cho mặt tiền và không gian hẹp.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
+          </article>
+          <article class="card service-card reveal reveal-delay" data-service="nha-pho">
+            <div class="card-media"><img src="https://src.garden.eco/img/image1_natural-garden-ideas_create-meandering-pathways.webp" alt="Lối đi trong vườn nhà phố" loading="lazy" /></div>
+            <div class="card-body"><h3>Nhà phố &amp; sân thượng</h3><p>Giếng trời, ban công, sân thượng thành nơi thư giãn.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
+          </article>
+          <article class="card service-card reveal reveal-delay-2" data-service="cham-soc">
+            <div class="card-media"><img src="https://ilverdecheresta.it/wp-content/uploads/2025/03/bg-parallax.jpg" alt="Khu vườn được chăm sóc xanh tốt" loading="lazy" /></div>
+            <div class="card-body"><h3>Chăm sóc định kỳ</h3><p>Cắt tỉa, bón phân, vệ sinh hồ theo lịch.</p><button class="text-btn" type="button">Xem chi tiết →</button></div>
           </article>
         </div>
+        <p class="more reveal">Ngoài ra: cafe, nhà hàng sân vườn, hòn non bộ và cải tạo vườn cũ.</p>
       </div>
     </section>
 
-    <section id="khong-gian" class="showcase reveal">
-      <div class="container showcase-inner">
-        <img class="showcase-img" src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Góc vườn tĩnh lặng" loading="lazy" />
-        <div class="showcase-text">
-          <p class="eyebrow">Cảm giác khi bước vào</p>
-          <h2>Yên, mát và rất riêng.</h2>
-          <p>Không cần nhiều cây. Cần đúng cây, đúng chỗ, đúng ánh sáng.</p>
+    <!-- DỰ ÁN: lọc theo hạng mục, bấm ảnh để xem lớn -->
+    <section id="du-an" class="section section-pale">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Dự án</p>
+            <h2>Lọc theo hạng mục<br />bạn đang quan tâm</h2>
+          </div>
+          <p class="section-note">Các dự án dưới đây là khung trình bày mẫu. Khi có ảnh công trình thật, chỉ cần thay ảnh và mô tả là dùng được ngay.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Lọc dự án">
+          <button class="filter-btn active" type="button" data-filter="all">Tất cả</button>
+          <button class="filter-btn" type="button" data-filter="biet-thu">Biệt thự</button>
+          <button class="filter-btn" type="button" data-filter="koi">Hồ Koi</button>
+          <button class="filter-btn" type="button" data-filter="nhat">Vườn Nhật</button>
+          <button class="filter-btn" type="button" data-filter="nha-pho">Nhà phố</button>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item reveal" data-category="biet-thu" data-title="Vườn biệt thự ven sông" data-desc="Thảm cỏ, lối đi sỏi trắng và cây bóng mát. Diện tích khoảng 600 m².">
+            <img src="https://www.garden.eco/img/image0_backyard-ideas-with-grass_defined-grass-areas.jpg" alt="Vườn biệt thự ven sông" loading="lazy" />
+            <figcaption><strong>Vườn biệt thự ven sông</strong><span>Biệt thự · 600 m²</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="koi" data-title="Hồ Koi sân sau" data-desc="Hồ Koi với hệ lọc giấu kín, thác nước nhỏ và đá tự nhiên.">
+            <img src="https://wallpapershome.com/images/pages/pic_h/29697.jpg" alt="Hồ Koi sân sau" loading="lazy" />
+            <figcaption><strong>Hồ Koi sân sau</strong><span>Hồ Koi · 25 m² mặt nước</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="nhat" data-title="Vườn Nhật tĩnh lặng" data-desc="Đá, đèn đá, sỏi và cây tỉa gọn — một góc ngồi yên vào buổi sáng.">
+            <img src="https://src.garden.eco/img/image3_zen-garden-ideas_stone-lanterns-and-basins.webp" alt="Vườn Nhật tĩnh lặng" loading="lazy" />
+            <figcaption><strong>Vườn Nhật tĩnh lặng</strong><span>Vườn Nhật · 80 m²</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="nha-pho" data-title="Lối đi nhà phố" data-desc="Lối đi uốn lượn, cây tầng thấp và ánh sáng ấm cho nhà phố.">
+            <img src="https://src.garden.eco/img/image1_natural-garden-ideas_create-meandering-pathways.webp" alt="Lối đi nhà phố" loading="lazy" />
+            <figcaption><strong>Lối đi nhà phố</strong><span>Nhà phố · 120 m²</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="biet-thu" data-title="Sân vườn resort nhỏ" data-desc="Cây tầng tán, hồ nước và chòi nghỉ cho không gian nghỉ dưỡng.">
+            <img src="https://images.stockcake.com/public/9/1/6/916d4474-528e-41c1-9672-b6b77591310e/enchanted-garden-pathway-stockcake.jpg" alt="Sân vườn resort nhỏ" loading="lazy" />
+            <figcaption><strong>Sân vườn resort nhỏ</strong><span>Biệt thự · 1.200 m²</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="nha-pho" data-title="Góc xanh ban công" data-desc="Vườn đứng và chậu cây cho ban công, dễ chăm, luôn tươi.">
+            <img src="https://ilverdecheresta.it/wp-content/uploads/2025/03/bg-parallax.jpg" alt="Góc xanh ban công" loading="lazy" />
+            <figcaption><strong>Góc xanh ban công</strong><span>Nhà phố · 12 m²</span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section id="quy-trinh" class="section">
-      <div class="container">
-        <p class="eyebrow reveal">Quy trình</p>
-        <h2 class="reveal">Ba bước là xong</h2>
-        <ol class="steps">
-          <li class="reveal"><span class="step-no">01</span><strong>Khảo sát</strong><p>Nghe nhu cầu, xem hiện trạng.</p></li>
-          <li class="reveal reveal-delay"><span class="step-no">02</span><strong>Thiết kế</strong><p>Bản vẽ rõ ràng, duyệt trước.</p></li>
-          <li class="reveal reveal-delay-2"><span class="step-no">03</span><strong>Thi công</strong><p>Bàn giao, chăm sóc sau đó.</p></li>
-        </ol>
+    <!-- ƯỚC TÍNH CHI PHÍ -->
+    <section id="bao-gia" class="section">
+      <div class="container estimator reveal">
+        <div>
+          <p class="eyebrow">Ước tính nhanh</p>
+          <h2>Thử tính chi phí<br />trước khi gọi</h2>
+          <p>Chọn hạng mục và diện tích, công cụ sẽ đưa ra khoảng giá tham khảo. Báo giá chính xác vẫn cần khảo sát thực tế, vì giá phụ thuộc vào vật liệu, địa hình và hệ thống kỹ thuật.</p>
+          <ul class="checklist">
+            <li>Không cần nhập thông tin cá nhân</li>
+            <li>Kết quả hiện ngay, không cần chờ</li>
+            <li>Có thể mang kết quả này khi tư vấn</li>
+          </ul>
+        </div>
+        <form id="estimator-form" class="estimator-form" novalidate>
+          <label>Hạng mục
+            <select id="est-service">
+              <option value="biet-thu">Sân vườn biệt thự</option>
+              <option value="koi">Hồ cá Koi</option>
+              <option value="nhat">Vườn Nhật &amp; tiểu cảnh</option>
+              <option value="nha-pho">Nhà phố &amp; sân thượng</option>
+            </select>
+          </label>
+          <label>Diện tích (m²)
+            <input id="est-area" type="number" min="10" max="2000" value="100" />
+          </label>
+          <label>Gói thi công
+            <select id="est-package">
+              <option value="thiet-ke">Chỉ thiết kế</option>
+              <option value="tron-goi" selected>Thiết kế + thi công trọn gói</option>
+              <option value="cao-cap">Trọn gói cao cấp</option>
+            </select>
+          </label>
+          <div class="estimate-result" role="status" aria-live="polite">
+            <span>Khoảng giá tham khảo</span>
+            <strong id="est-result">—</strong>
+            <small>Chưa bao gồm chi phí phát sinh theo hiện trạng.</small>
+          </div>
+        </form>
       </div>
     </section>
 
+    <!-- CẢM NHẬN: mẫu, ghi rõ để thay bằng đánh giá thật -->
+    <section class="section section-pale">
+      <div class="container">
+        <p class="eyebrow reveal">Khách hàng nói gì</p>
+        <h2 class="reveal">Những phản hồi chúng tôi hay nhận được</h2>
+        <p class="section-note reveal">Nội dung dưới đây là mẫu trình bày. Khi vận hành thật, hãy thay bằng đánh giá thật của khách hàng.</p>
+        <div class="testimonials reveal">
+          <blockquote class="testimonial active">
+            <p>“Vườn xong nhà như rộng ra. Buổi sáng ra ngồi uống cà phê là thấy đáng tiền.”</p>
+            <footer>— Gia đình ở biệt thự, Hà Nội <span>★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Hồ Koi nước trong hẳn, cá khỏe, không còn mùi hay rêu như trước.”</p>
+            <footer>— Chủ nhà cải tạo hồ cũ, TP. Hồ Chí Minh <span>★★★★★</span></footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“Đội làm gọn, đúng bản vẽ, xong còn hướng dẫn chăm cây rất kỹ.”</p>
+            <footer>— Nhà phố, Huế <span>★★★★★</span></footer>
+          </blockquote>
+          <div class="testimonial-nav">
+            <button class="btn btn-ghost btn-small" type="button" id="testi-prev">← Trước</button>
+            <button class="btn btn-ghost btn-small" type="button" id="testi-next">Sau →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HỎI ĐÁP -->
+    <section id="faq" class="section">
+      <div class="container faq">
+        <p class="eyebrow reveal">Hỏi đáp</p>
+        <h2 class="reveal">Những câu hỏi hay gặp nhất</h2>
+        <details class="reveal" open>
+          <summary>Làm một sân vườn mất bao lâu?</summary>
+          <p>Thiết kế thường 7–14 ngày. Thi công tùy diện tích và hạng mục, phổ biến 2–6 tuần cho nhà phố và biệt thự vừa. Lịch cụ thể sẽ có trong báo giá sau khảo sát.</p>
+        </details>
+        <details class="reveal">
+          <summary>Hồ Koi có khó chăm không?</summary>
+          <p>Không, nếu hệ lọc, bơm và oxy được tính đúng ngay từ đầu. Chúng tôi bàn giao kèm hướng dẫn vận hành và lịch vệ sinh, và có gói chăm sóc định kỳ nếu bạn muốn.</p>
+        </details>
+        <details class="reveal">
+          <summary>Nhà phố nhỏ, sân thượng nắng gắt thì làm được gì?</summary>
+          <p>Làm được vườn đứng, chậu cây chịu nắng, giếng trời và tiểu cảnh nhỏ. Quan trọng nhất là chống thấm, thoát nước và chọn cây đúng nắng gió của vị trí đó.</p>
+        </details>
+        <details class="reveal">
+          <summary>Khảo sát có mất phí không?</summary>
+          <p>Khảo sát và tư vấn phương án sơ bộ là miễn phí. Phí thiết kế chi tiết sẽ được báo rõ trước khi bắt đầu, và có thể khấu trừ khi ký thi công trọn gói.</p>
+        </details>
+        <details class="reveal">
+          <summary>Sau bàn giao, vườn có được bảo hành không?</summary>
+          <p>Có, bảo hành 12 tháng cho hạng mục thi công trọn gói, bao gồm hệ thống tưới, lọc hồ và cây trồng theo điều kiện bàn giao.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- KIẾN THỨC -->
+    <section class="section section-pale">
+      <div class="container">
+        <p class="eyebrow reveal">Kiến thức sân vườn</p>
+        <h2 class="reveal">Đọc trước khi làm vườn</h2>
+        <div class="cards tips-cards">
+          <article class="card reveal"><div class="card-body"><h3>5 sai lầm hay gặp khi làm hồ Koi</h3><p>Lọc quá nhỏ, bơm quá yếu, thiếu oxy và chọn đá sai là những lỗi tốn tiền nhất.</p><span class="card-tag">Hồ Koi</span></div></article>
+          <article class="card reveal reveal-delay"><div class="card-body"><h3>Chọn cây theo hướng nắng</h3><p>Hướng Tây cần cây chịu nắng, hướng Bắc cần cây ưa bóng. Chọn sai, cây đẹp mấy cũng khó sống.</p><span class="card-tag">Cây trồng</span></div></article>
+          <article class="card reveal reveal-delay-2"><div class="card-body"><h3>Sân thượng: chống thấm trước, trồng cây sau</h3><p>Một lớp chống thấm làm ẩu có thể tốn gấp nhiều lần tiền sửa nhà sau này.</p><span class="card-tag">Sân thượng</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
     <section id="lien-he" class="section contact-section">
       <div class="container contact-card reveal">
         <h2>Muốn có một khu vườn như vậy?</h2>
-        <p>Để lại số điện thoại, chúng tôi gọi lại trong 24 giờ làm việc.</p>
+        <p>Để lại thông tin, chúng tôi gọi lại trong 24 giờ làm việc để hẹn khảo sát miễn phí.</p>
         <form id="consult-form" novalidate>
           <input type="text" name="name" required placeholder="Họ và tên" aria-label="Họ và tên" autocomplete="name" />
           <input type="tel" name="phone" required placeholder="Số điện thoại" aria-label="Số điện thoại" autocomplete="tel" />
+          <select name="service" aria-label="Hạng mục quan tâm">
+            <option>Sân vườn biệt thự</option>
+            <option>Hồ cá Koi</option>
+            <option>Vườn Nhật &amp; tiểu cảnh</option>
+            <option>Nhà phố &amp; sân thượng</option>
+            <option>Chăm sóc định kỳ</option>
+          </select>
           <button class="btn btn-shine" type="submit">Gửi yêu cầu</button>
         </form>
         <p class="form-status" role="status" aria-live="polite"></p>
-        <p class="contact-note">Khảo sát miễn phí · Không ràng buộc</p>
+        <p class="contact-note">Giờ làm việc: 8:00 – 18:00, thứ Hai đến thứ Bảy · Phục vụ toàn quốc</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <p><strong>Sân Vườn Cố Đô</strong> — Không gian xanh, dấu ấn thời gian.</p>
-      <p>Ngoài ra: tường cây, vườn đứng, giếng trời, sân thượng và chăm sóc định kỳ.</p>
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Sân Vườn Cố Đô</strong></p>
+        <p>Không gian xanh, dấu ấn thời gian.</p>
+      </div>
+      <div>
+        <p><strong>Dịch vụ</strong></p>
+        <p>Sân vườn biệt thự · Hồ cá Koi · Vườn Nhật · Tường cây · Nhà phố</p>
+      </div>
+      <div>
+        <p><strong>Bắt đầu</strong></p>
+        <p><a href="#du-an">Xem dự án</a> · <a href="#bao-gia">Ước tính chi phí</a> · <a href="#lien-he">Đặt lịch khảo sát</a></p>
+      </div>
     </div>
   </footer>
+
+  <!-- Hộp thoại dùng chung cho chi tiết dịch vụ và xem ảnh lớn -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-close aria-label="Đóng">✕</button>
+      <img id="modal-img" alt="" hidden />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-meta"></p>
+      <a class="btn" href="#lien-he" data-close>Tư vấn hạng mục này</a>
+    </div>
+  </div>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Lên đầu trang">↑</button>
 
   <script src="script.js"></script>
 </body>
